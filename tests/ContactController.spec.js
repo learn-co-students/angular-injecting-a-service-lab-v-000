@@ -28,7 +28,7 @@ describe('ContactController', function () {
 
 		expect($scope.name).not.toBe(undefined);
 	});
-	
+
 	it('should update $scope.name after 5000 milliseconds', function () {
 		var $scope = {};
 		var originalName;
@@ -40,6 +40,8 @@ describe('ContactController', function () {
 
 		$controller('ContactController as vm', { $scope: $scope, $timeout: mockTimeout });
 
+		expect(originalName).not.toBe(undefined);
+		expect($scope.name).not.toBe(undefined);
 		expect(originalName).not.toBe($scope.name);
 	});
 });
