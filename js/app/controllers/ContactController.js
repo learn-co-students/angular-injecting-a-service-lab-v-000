@@ -4,6 +4,7 @@ function ContactController($scope, $timeout) {
 	$timeout(function () {
 		$scope.name = 'Steve Jobs';
 	}, 5000);
+
 }
 
 angular
