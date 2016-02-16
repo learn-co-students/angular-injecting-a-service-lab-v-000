@@ -6,7 +6,7 @@
 
 ## Instructions
 
-Let's inject one of Angular's built in services into our controller. 
+Let's inject one of Angular's built in services into our controller.
 
 For this lab, we're going to make use of `$timeout`. `$timeout` allows us to create timeouts (similar to `setTimeout`) in our applications whilst ensuring that any changes to our model done inside a timeout gets reflected in the view.
 
@@ -18,17 +18,7 @@ $timeout(function () {
 }, 2000);
 ```
 
-First, lets setup our directory structure:
- 
-- js/
- - app/
-   - controllers/
-     - ContactController.js
-   - app.js
- - angular.js
-- index.html
-
-You can find `app.js`, `angular.js` and `index.html` in this repo.
+Fork and clone this repository to get started. 
 
 Let's create our controller inside `ContactController.js`, this should have two parameters - `$scope` and `$timeout` (it doesn't matter what order you put them in, if you don't believe me - try it!).
 
