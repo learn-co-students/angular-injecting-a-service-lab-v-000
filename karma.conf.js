@@ -10,7 +10,8 @@ module.exports = function (config) {
         ],
         exclude: [],
         plugins: [
-            require("karma-chrome-launcher"),
+            //require("karma-chrome-launcher"),
+            require("karma-phantomjs-launcher"),
             require("karma-jasmine"),
             require("karma-spec-reporter")
         ],
@@ -20,7 +21,7 @@ module.exports = function (config) {
         colors: true,
         logLevel: config.LOG_INFO,
         autoWatch: false,
-        browsers: ['Chrome'],
+        browsers: ['PhantomJS'],
         singleRun: true,
         concurrency: Infinity
     })
