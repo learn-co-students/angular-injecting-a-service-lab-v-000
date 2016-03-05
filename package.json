@@ -6,6 +6,8 @@
     "karma": "^0.13.19",
     "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.6",
-    "karma-spec-reporter": "0.0.23"
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-spec-reporter": "0.0.23",
+    "phantomjs-prebuilt": "^2.1.4"
   }
 }
