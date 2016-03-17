@@ -16,11 +16,11 @@ module.exports = function (config) {
         ],
         preprocessors: {},
         reporters: ['spec'],
-        port: 9876,
+        port: 3000,
         colors: true,
         logLevel: config.LOG_INFO,
         autoWatch: false,
-        browsers: ['Chrome'],
+//         browsers: ['Chrome'],
         singleRun: true,
         concurrency: Infinity
     })
