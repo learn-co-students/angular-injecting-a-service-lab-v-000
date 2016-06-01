@@ -3,7 +3,7 @@ function ContactController($scope, $timeout) {
 
 	$timeout(function() {
 		$scope.name = 'Maria LaChance';
-	}, 2000);
+	}, 5000);
 }
 
 angular
