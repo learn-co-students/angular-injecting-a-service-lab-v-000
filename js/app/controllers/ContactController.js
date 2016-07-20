@@ -3,7 +3,6 @@ function ContactController($scope, $timeout) {
 
   $timeout(function () {
     $scope.name = "Donald Trump";
-      // this would be fired after 2 seconds!
       }, 5000);
   }
 
