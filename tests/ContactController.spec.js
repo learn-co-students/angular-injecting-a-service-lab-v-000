@@ -16,7 +16,7 @@ describe('ContactController', function () {
 			time = milliseconds;
 		}
 
-		$controller('ContactController as vm', { $scope: $scope, $timeout: mockTimeout });
+		$controller('ContactController', { $scope: $scope, $timeout: mockTimeout });
 
 		expect(time).toBe(5000);
 	});
@@ -24,7 +24,7 @@ describe('ContactController', function () {
 	it('should have a name property on $scope', function () {
 		var $scope = {};
 
-		$controller('ContactController as vm', { $scope: $scope });
+		$controller('ContactController', { $scope: $scope });
 
 		expect($scope.name).not.toBe(undefined);
 	});
@@ -38,7 +38,7 @@ describe('ContactController', function () {
 			func();
 		}
 
-		$controller('ContactController as vm', { $scope: $scope, $timeout: mockTimeout });
+		$controller('ContactController', { $scope: $scope, $timeout: mockTimeout });
 
 		expect(originalName).not.toBe(undefined);
 		expect($scope.name).not.toBe(undefined);
