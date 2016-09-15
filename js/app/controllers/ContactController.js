@@ -1,12 +1,20 @@
 function ContactController($scope, $timeout) {
-	// set initial value of property 'name'
+  // set initial value of property 'name'
   $scope.name = 'Antonio David';
-  // inject $timeout service
-  $timeout(
-    function() {
-      // set updated value of property 'name'
-      $scope.name = 'My New Name'
-    }, 5000  
+  
+  // $scope.changeName = function(name) {
+  // // inject $timeout service
+  //   $timeout(
+  //     function() {
+  //       // set updated value of property 'name'
+  //       $scope.name = $scope.newName;
+  //     }, 5000  
+  //   );
+  // };
+
+  $timeout(function(){
+    $scope.name = 'Something Else!';},
+    5000
   );
 }
 
