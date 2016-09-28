@@ -1,5 +1,10 @@
-function ContactController($scope) {
-	$scope.name = 'Bill Gates';
+function ContactController($scope, $timeout) {
+	$scope.name = 'your name';
+
+	$timeout(function () {
+    	$scope.name = 'something else';
+		}, 5000);
+
 }
 
 angular
