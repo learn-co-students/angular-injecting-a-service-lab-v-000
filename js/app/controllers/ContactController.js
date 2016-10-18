@@ -1,7 +1,7 @@
 function ContactController($scope, $timeout) {
 	$scope.name = 'Michael Simon';
 	$timeout(function() {
-		$scope.name = 'Jordan Simon';
+		$scope.name = 'Brad Simon';
 	}, 5000);
 }
 
